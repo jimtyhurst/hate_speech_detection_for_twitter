@@ -17,16 +17,16 @@ library(ggplot2)
 #' @export
 explore_zeerakw_hate_speech <- function() {
   encoded_tweets <-
-    read_csv(
+    readr::read_csv(
       "https://raw.githubusercontent.com/ZeerakW/hatespeech/master/NAACL_SRW_2016.csv",
       col_names = c("tweet_id", "rating"),
       col_types = list(col_character(), col_character())
     ) %>%
-    mutate(rating = as.factor(rating))
+    dplyr::mutate(rating = as.factor(rating))
 
   encoded_tweets %>%
-    group_by(rating) %>%
-    summarize(total_tweets = n()) %>%
+    dplyr::group_by(rating) %>%
+    dplyr::summarize(total_tweets = n()) %>%
     ggplot(aes(x = rating, y = total_tweets)) +
     geom_bar(stat = "identity") +
     geom_text(aes(label = total_tweets, vjust = -0.25)) +

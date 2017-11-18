@@ -20,7 +20,7 @@ explore_t_davidson_hate_speech <- function() {
 
   # Histogram of tweet lengths
   encoded_tweets %>%
-    mutate(tweet_length = nchar(tweet)) %>%
+    dplyr::mutate(tweet_length = nchar(tweet)) %>%
     ggplot(aes(x = tweet_length)) +
     geom_histogram(binwidth = 1) +
     scale_x_continuous(name = "Number of characters in tweet",
