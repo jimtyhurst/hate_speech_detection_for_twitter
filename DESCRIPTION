@@ -1,0 +1,25 @@
+Package: HateSpeechDetectionInTwitter
+Type: Package
+Title: Explores Public Data Sets Regarding Hate Speech Detection For Twitter
+Version: 0.1.0
+Authors@R: person("Jim", "Tyhurst", email = "jim@tyhurst.com", role = c("aut", "cre"))
+Description: As people are starting to study the problem of hate speech or
+    offensive language on public media, 
+License: file LICENSE
+Copyright: 2017 Jim Tyhurst
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.4.1)
+Imports:
+    dplyr (>= 0.7.4),
+    ggplot2 (>= 2.2.1),
+    readr (>= 1.1.1)
+Suggests:
+    devtools (>= 1.13.4),
+    knitr (>= 1.17),
+    rmarkdown (>= 1.8),
+    roxygen2 (>= 6.0.1),
+    testthat (>= 1.0.2)
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
