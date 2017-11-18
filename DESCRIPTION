@@ -1,10 +1,12 @@
-Package: HateSpeechDetectionInTwitter
+Package: HateSpeechDetectionForTwitter
 Type: Package
-Title: Explores Public Data Sets Regarding Hate Speech Detection For Twitter
+Title: Explores public data sets regarding detection of offensive language on Twitter
 Version: 0.1.0
 Authors@R: person("Jim", "Tyhurst", email = "jim@tyhurst.com", role = c("aut", "cre"))
 Description: As people are starting to study the problem of hate speech or
-    offensive language on public media, 
+    offensive language on social media platforms, they are creating data sets
+    of tweets that are encoded with various ratings. This repository is for
+    experimenting with those data sets.
 License: file LICENSE
 Copyright: 2017 Jim Tyhurst
 Encoding: UTF-8

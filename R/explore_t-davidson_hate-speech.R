@@ -42,4 +42,6 @@ explore_t_davidson_hate_speech <- function() {
     ylab("quantity") +
     ggtitle("Number of tweets in each class (data: labeled_data.csv)") %>%
     print()
+
+  return(encoded_tweets)
 }

@@ -35,4 +35,5 @@ explore_zeerakw_hate_speech <- function() {
     ggtitle("Number of tweets by rating (data: NAACL_SRW_2016.csv)") %>%
     print()
 
+  return(encoded_tweets)
 }
